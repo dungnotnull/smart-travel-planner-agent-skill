@@ -1,0 +1,10 @@
+# Runtime: the knowledge pipeline has zero hard dependencies and degrades to
+# the Python standard library when the optional crawler is absent.
+# Install the optional crawler with:  pip install -e ".[crawl]"
+# Install test deps with:             pip install -e ".[test]"
+
+# Optional: richer JavaScript-rendered crawling of authoritative travel sources.
+crawl4ai>=0.3.0
+
+# Tests
+pytest>=7.0

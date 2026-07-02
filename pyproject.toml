@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-travel-planner"
+version = "1.0.0"
+description = "Claude skill that plans cost- and experience-optimized self-guided trips with a self-improving knowledge brain."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Smart Travel Planner Contributors" }]
+keywords = ["travel", "itinerary", "planner", "claude-skill", "optimization"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Office/Business :: Scheduling",
+    "Intended Audience :: End Users/Desktop",
+]
+dependencies = []
+
+[project.optional-dependencies]
+crawl = ["crawl4ai>=0.3.0"]
+test = ["pytest>=7.0"]
+
+[project.scripts]
+smart-travel-knowledge-update = "tools.knowledge_updater:main"
+
+[tool.setuptools]
+packages = ["tools"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
