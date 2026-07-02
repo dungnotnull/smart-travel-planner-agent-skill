@@ -1,4 +1,4 @@
-# Smart Travel Planner — cost/experience optimization (Skill #160)
+# Smart Travel Planner — cost/experience optimization
 
 A Claude skill that designs **cost- and experience-optimized self-guided trips**
 using real-time price, weather and event signals plus traveler preferences. It
@@ -6,8 +6,6 @@ runs a research-first, framework-grounded harness that scores every itinerary
 against named world-renowned methodologies, challenges its own assumptions, and
 returns a prioritized improvement roadmap — while a self-improving knowledge
 brain keeps the skill current.
-
-**Cluster:** `lifestyle-personal` · **Slug:** `smart-travel-planner`
 
 ## Why this skill
 
